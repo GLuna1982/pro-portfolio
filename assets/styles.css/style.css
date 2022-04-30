@@ -1,8 +1,26 @@
-*{
-    background-color: aliceblue;
-    background-image: url("/assets/images/abstract-bckgrnd.jpg");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.header{
-    background-image: url("/assets/images/canvas.jpg");
+header {
+    background-image: url("../images/canvas.jpg");
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.hero {
+    background-image: url("../images/tech-collage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero p {
+    box-sizing: border-box;
 }
