@@ -1,0 +1,109 @@
+/* All page margin and padding settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* Body main style */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+/*Header style*/
+header {
+    margin: 0;
+    padding: 10px;
+}
+
+#logo a img {
+    width: 30%;
+    height: 30%;
+}
+header nav {
+    float: right;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a {
+    text-decoration: none;
+    color:beige;
+    font-weight: bold;
+    font-size: 35px;
+    margin:0 30px 20px 0px;
+}
+/*Projects Section style */
+#projects {
+    margin: 0px;
+    padding: 50px;
+}
+table{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+td {
+    padding: 20px;
+}
+.table-image {
+    height: 100%;
+    width: 100%;
+}
+/*Button styles */
+.buttons {
+    font-size: 25px;
+    margin: 15px;
+    padding: 25px;
+    text-align: center;
+}
+button {
+    background-color: black;
+    border-bottom: 1px solid #EA00FF;
+    border-left: 1px solid #EA00FF;
+    border-radius: 10px;
+    color:beige;
+    margin: 10px;
+    padding: 15px;
+}
+
+button:hover{
+    box-shadow: 0 0 15px 0 #EA00FF,
+                0 0 15px 0 #EA00FF,
+                0 0 10px 0 #EA00FF inset;
+}
+
+/* H1 font style */
+h1 {
+    color: beige;
+    font-size: 45px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid #39ff14;
+}
+h3 {
+    color: beige;
+    font-size: 25px;
+    padding: 15px;
+    text-align: left;
+}
+#about {
+    margin: 0px;
+    padding: 50px;
+    position: relative;
+}
+#about div img {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+p {
+    color: beige;
+    position: absolute;
+    left: 400px;
+    top: 180px;
+    width: 1000px;
+}
