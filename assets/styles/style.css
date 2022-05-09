@@ -21,11 +21,11 @@ header {
     margin: 0;
     padding: 10px;
 }
-
 #logo a img {
     width: 30%;
     height: 30%;
 }
+/* Navigation bar style */
 header nav {
     float: right;
 }
@@ -43,12 +43,18 @@ header nav ul li a:hover {
     color: var(--color2);
     text-shadow: 2px 2px 5px var(--color4);
 }
+.set {
+    position: fixed;
+    top: auto;
+    width:100%;
+    background-color: var(--color1);
+    z-index: 1;
+}
 /* Hero section style */
 .hero {
     background-image: url("../images/blue-pink-waves.png");
     background-position: center;
     background-size: cover;
-    opacity: 75%;
 }
 /*Projects Section style */
 #projects {
@@ -158,8 +164,8 @@ input {
     resize: horizontal;
     outline: none;
     background: var(--color1);
+    color: var(--color2);
     border: none;
-    color: var(--color1);
 }
 textarea {
     resize: horizontal;
@@ -167,4 +173,11 @@ textarea {
     background: var(--color1);
     border: none;
     color: var(--color2);
+}
+.form {
+    width: 100%;
+    height: auto;
+}
+.form tr td{
+    text-align: left;
 }
