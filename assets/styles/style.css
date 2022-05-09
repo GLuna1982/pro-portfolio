@@ -4,10 +4,17 @@
     padding: 0;
     box-sizing: border-box;
   }
+  /* Variables for set colors */
+  :root {
+      --color1: #000000;
+      --color2: #F5F5DC;
+      --color3: #00CAB1;
+      --color4: #EA00FF;
+  }
 /* Body main style */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: black;
+    background-color: var(--color1);
 }
 /*Header style*/
 header {
@@ -27,22 +34,34 @@ header nav ul li {
 }
 header nav ul li a {
     text-decoration: none;
-    color:beige;
+    color: var(--color2);
     font-weight: bold;
     font-size: 35px;
     margin:0 30px 20px 0px;
+}
+header nav ul li a:hover {
+    color: var(--color2);
+    text-shadow: 2px 2px 5px var(--color4);
+}
+/* Hero section style */
+.hero {
+    background-image: url("../images/blue-pink-waves.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 75%;
 }
 /*Projects Section style */
 #projects {
     margin: 0px;
     padding: 50px;
 }
-table{
+/* Table styling */
+#project-tbl{
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 5px;
 }
-td {
+#project-tbl tr td {
     padding: 20px;
 }
 .table-image {
@@ -57,35 +76,46 @@ td {
     text-align: center;
 }
 button {
-    background-color: black;
-    border-bottom: 1px solid #EA00FF;
-    border-left: 1px solid #EA00FF;
+    background-color: var(--color1);
+    border-bottom: 1px solid var(--color4);
+    border-left: 1px solid var(--color4);
     border-radius: 10px;
-    color:beige;
+    color: var(--color2);
     margin: 10px;
     padding: 15px;
 }
 
 button:hover{
-    box-shadow: 0 0 15px 0 #EA00FF,
-                0 0 15px 0 #EA00FF,
-                0 0 10px 0 #EA00FF inset;
+    box-shadow: 0 0 15px 0 var(--color4),
+                0 0 15px 0 var(--color4),
+                0 0 10px 0 var(--color4) inset;
 }
-
 /* H1 font style */
 h1 {
-    color: beige;
+    color: var(--color2);
     font-size: 45px;
     padding: 10px;
     text-align: center;
-    border-bottom: solid #39ff14;
+    border-bottom: solid var(--color3);
 }
+/* H2 font style */
+h2{
+    color: var(--color2);
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+    padding: 260px;
+    z-index: 3;
+}
+
+/*H3 font style */
 h3 {
-    color: beige;
+    color: var(--color2);
     font-size: 25px;
     padding: 15px;
     text-align: left;
 }
+/* About Section style */
 #about {
     margin: 0px;
     padding: 50px;
@@ -99,11 +129,42 @@ h3 {
     top: 20px;
     left: 20px;
 }
-
 p {
-    color: beige;
+    color: var(--color2);
     position: absolute;
     left: 400px;
     top: 180px;
     width: 1000px;
+}
+/* Contact section */
+#contact {
+    margin: 0px;
+    padding: 50px;
+}
+#contact div h3 {
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+}
+form {
+    position: relative;
+}
+label {
+    color: var(--color2);
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+}
+input {
+    resize: horizontal;
+    outline: none;
+    background: var(--color1);
+    border: none;
+    color: var(--color1);
+}
+textarea {
+    resize: horizontal;
+    outline: none;
+    background: var(--color1);
+    border: none;
+    color: var(--color2);
 }

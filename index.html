@@ -36,13 +36,16 @@
             </nav>
             </div>   
         </header>
+        <section class="hero">
+            <h2>Design and Innovation is My Passion</h2>
+        </section>
         <!--Projects Section-->
         <section id="projects">
             <div>
                 <h1>Projects</h1>
             </div>
             <div>
-                <table>
+                <table id="project-tbl">
                     <tr>
                         <td>
                             <div>
@@ -88,8 +91,24 @@
         </section>
         <!--Contact Section-->
         <section id="contact">
+            <div>
+                <h1>Contact Me</h1>
+            </div>
+            <div>
+                <h3>Let's Work Together!</h3>
+            </div>
             <form>
-
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="tel">Phone Number:</label>
+                <input type="tel" id="tel" name="tel"><br><br>
+                <label for="message">Leave a Message:</label>
+                <textarea name="message" rows="10" cols="93 "></textarea>
+                <button onclick="submit">Submit</button>
             </form>
         </section>
         <!--Footer Section-->
