@@ -14,50 +14,63 @@
 /* Body main style */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--color2);
     background-color: var(--color1);
 }
 /*Header style*/
 header {
-    margin: 0;
-    padding: 10px;
+    background-color: var(--color1);
+    padding: 10px 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
 }
-#logo a img {
-    width: 30%;
-    height: 30%;
+header a img {
+    width: 50%;
+    height: auto;
 }
 /* Navigation bar style */
-header nav {
-    float: right;
-}
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 50px;
 }
 header nav ul li a {
+    font-size: 1.55vw;
+}
+
+header a {
     text-decoration: none;
     color: var(--color2);
     font-weight: bold;
     font-size: 35px;
     margin:0 30px 20px 0px;
 }
-header nav ul li a:hover {
+header a:hover {
     color: var(--color2);
     text-shadow: 2px 2px 5px var(--color4);
 }
-.set {
-    position: fixed;
-    top: auto;
-    width:100%;
-    background-color: var(--color1);
-    z-index: 1;
-}
+
 /* Hero section style */
 .hero {
     background-image: url("../images/blue-pink-waves.png");
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
 }
-/*Projects Section style */
-#projects {
+/* Section Styling */
+section {
     margin: 0px;
     padding: 50px;
 }
@@ -96,7 +109,7 @@ button:hover{
                 0 0 15px 0 var(--color4),
                 0 0 10px 0 var(--color4) inset;
 }
-/* H1 font style */
+/* H1 font style */-
 h1 {
     color: var(--color2);
     font-size: 45px;
@@ -153,11 +166,16 @@ p {
     padding: 20px;
 }
 form {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
 }
 label {
     color: var(--color2);
-    padding: 10px 10px 10px 0;
+    margin: 25px 0 0 0;
+    padding: 20px;
     display: inline-block;
 }
 input {
@@ -165,19 +183,12 @@ input {
     outline: none;
     background: var(--color1);
     color: var(--color2);
-    border: none;
+    border-bottom: var(--color4) solid;
+    border-top: var(--color1);
+    border-left: var(--color1);
+    border-right: var(--color1);
 }
-textarea {
-    resize: horizontal;
-    outline: none;
-    background: var(--color1);
-    border: none;
-    color: var(--color2);
-}
-.form {
-    width: 100%;
-    height: auto;
-}
-.form tr td{
-    text-align: left;
+#form-btn {
+    display: inline-block;
+    width: 50%;
 }
