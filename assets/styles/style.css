@@ -22,7 +22,7 @@ body {
 /*Header style*/
 header {
     background-color: var(--color1);
-    height: 200px;
+    height: 180px;
     padding: 10px 0 0 10px;
     display: flex;
     justify-content: space-around;
@@ -69,20 +69,27 @@ header a:hover {
 }
 
 /* Hero section style */
-.hero {
-    background-image: url("../images/blue-pink-waves.png");
-    background-position: center;
-    background-size: cover;
+main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    background-attachment: fixed;
-    height: 2667px;
+    height: 500px;
 }
-
-
-
+.hero {
+    background-image: url("../images/blue-pink-waves.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main h1{
+    color: var(--color2);
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+}
 /* Section Styling */
 section {
     margin: 0px;
@@ -111,15 +118,7 @@ button:hover{
                 0 0 15px 0 var(--color4),
                 0 0 10px 0 var(--color4) inset;
 }
-/* H1 font style */
-h1 {
-    color: var(--color2);
-    font-size: 50px;
-    padding: 10px;
-    text-align: center;
-    padding: 260px;
-    z-index: 3;    
-}
+
 /* H2 font style */
 h2{
     color: var(--color2);
@@ -139,6 +138,9 @@ h3 {
 
 /* Media Query for Smaller desktop screens or smaller */
 @media screen and (max-width: 980px) {
+    header{
+        height: 150px;
+    }
     nav ul li a {
         font-size: 30px;
         width: 100%;
@@ -149,13 +151,11 @@ h3 {
         width: 50%;
         object-position: center;
     }
-    h1 {
-        font-size: 35px;
-        padding: 10px;
-    }
     .hero {
-        height: 1334px;
-    }
+        background-image: url("../images/blue-pink-waves-sml-screen.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }    
 }
 
 /* Media Query for Tablets and smaller */
@@ -170,13 +170,18 @@ h3 {
         width: 50%;
         object-position: center;
     }
-    h1 {
-        font-size: 30px;
+    main {
+        height: auto;
     }
+
     .hero {
-        height: 667px;
-        background-size: 100%;
-        background-repeat: no-repeat;
+        background-image: url("../images/blue-pink-waves-tblts.png");
+        background-size: auto;
+        background-position: top;
+    }
+    main h1{
+        font-size: 45px;
+        padding: 100px 0;
     }
 }
 
@@ -192,12 +197,15 @@ h3 {
         width: 50%;
         object-position: center;
     }
-    h1 {
-        font-size: 25px;
+    main {
+        height: auto;
     }
     .hero {
-        height: 333px;
-        background-size: 100%;
-        background-repeat: no-repeat;
+        background-image: url("../images/blue-pink-waves-mobile.png");
+        background-size: auto;
+    }
+    main h1{
+        font-size: 35px;
+        padding: 50px 0;
     }
 }
