@@ -95,7 +95,7 @@ main h1{
 /* Section Styling */
 section {
     margin: 0px;
-    padding: 155px 50px 0px 50px;
+    padding: 150px 50px 0px 50px;
 }
 
 /*Button styles */
@@ -144,7 +144,7 @@ h3 {
 .projects {
     width: 100%;
     margin: 0;
-    padding: 20px;
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -157,6 +157,30 @@ h3 {
 
 .prjcts img {
     width: 100%;
+}
+
+/* About section styling */
+.profile {
+    margin: 3.5%;
+    align-items: left;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.profile img {
+    width:100%;
+    margin: 0;
+    padding: 25px;
+}
+
+.profile p {
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.2;
 }
 
 /* Media Query for Smaller desktop screens or smaller */
@@ -219,6 +243,15 @@ h3 {
     .projects {
         padding: 10px;
     }
+    .profile {
+        margin: 0;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+    }    
+    .profile p {
+        font-size: 18px;
+    }
 }
 
 /* Media Query for mobile devices and smaller */
@@ -256,5 +289,8 @@ h3 {
     }
     .prjcts {
         margin: 25px 0 15px 0;
+    }
+    .profile p {
+        font-size: 15px;
     }
 }
