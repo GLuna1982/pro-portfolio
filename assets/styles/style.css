@@ -34,6 +34,7 @@ header {
     top: 0;
     z-index: 999;
 }
+/* Header Logo styling */
 header a img {
     width: 50%;
     height: auto;
@@ -90,10 +91,11 @@ main h1{
     justify-content: center;
     padding: 150px 0;
 }
+
 /* Section Styling */
 section {
     margin: 0px;
-    padding: 50px;
+    padding: 155px 50px 0px 50px;
 }
 
 /*Button styles */
@@ -124,16 +126,37 @@ h2{
     color: var(--color2);
     font-size: 45px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     border-bottom: solid var(--color3);
+    border-bottom-left-radius: 10px;
 }
 
 /*H3 font style */
 h3 {
     color: var(--color2);
     font-size: 25px;
-    padding: 15px;
-    text-align: left;
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Projects Section styling */
+.projects {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.prjcts {
+    margin: 50px 0 25px 0;
+    flex: 1;
+}
+
+.prjcts img {
+    width: 100%;
 }
 
 /* Media Query for Smaller desktop screens or smaller */
@@ -151,10 +174,14 @@ h3 {
         width: 50%;
         object-position: center;
     }
+    main{
+        height: auto;
+    }
     .hero {
         background-image: url("../images/blue-pink-waves-sml-screen.png");
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: top;
     }    
 }
 
@@ -183,6 +210,15 @@ h3 {
         font-size: 45px;
         padding: 100px 0;
     }
+    h2{
+        font-size: 35px;
+    }
+    h3 {
+        padding: 15px;
+    }
+    .projects {
+        padding: 10px;
+    }
 }
 
 /* Media Query for mobile devices and smaller */
@@ -207,5 +243,18 @@ h3 {
     main h1{
         font-size: 35px;
         padding: 50px 0;
+    }
+    section {
+        margin: 0px;
+        padding: 50px 25px 0px 25px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .prjcts {
+        margin: 25px 0 15px 0;
     }
 }
