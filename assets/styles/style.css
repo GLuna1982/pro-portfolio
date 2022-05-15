@@ -307,7 +307,7 @@ footer {
 /* Media Query for mobile devices and smaller */
 @media screen and (max-width: 575px){
     nav ul li a {
-        font-size: 16px;
+        font-size: 15px;
         width: 100%;
         justify-content: center;
     }
